@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  font-family: "Advent Pro", sans-serif;
+}
+#myBackground {
+  min-height: 800px;
+}
+.justify-content-between {
+  background-color: blueviolet;
+}
+.myGrid {
+  border-style: none;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  padding: 0;
+}
+
+.gridImage {
+  width: 100%;
+  height: 200px;
+  padding-bottom: 5px;
+}
+.card {
+  margin: auto;
+  margin-bottom: 30px;
+  width: 350px;
+}
+#likeButton {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+#pills-card-tab, #pills-grid-tab{
+  border: none;
+  background-color: white;
+}
+#myNavbar {
+  background-color: white;
+}

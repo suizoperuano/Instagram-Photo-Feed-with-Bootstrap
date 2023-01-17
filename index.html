@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Fake Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e89fb71851.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="myBackground" style="background-color: white; width: 800px;">
+        <div class="nav-bar-container">
+            <nav class="navbar text-black" id="myNavbar">
+                <div class="container d-flex justify-content-between">
+                    <div class="nav-bar-left d-flex">
+                        <div class="me-auto p-3"><i class="fa-brands fa-instagram fs-1"></i></div>
+                        <div class="justify-content-center p-3 fs-3 text-black">Instagram</div>
+                    </div>
+                    <div class="nav-bar-right d-flex">
+                        <div class="p-2">
+                            <button type="button" class="btn btn-primary bg-success border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Create new post
+                              </button>
+                        </div>
+                        <div class="p-2">                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="action text-decoration-none link-dark ps-3 pb-2 fw-bold " href="#">Profile</a></li>
+                                <li><a class="action text-decoration-none link-dark ps-3 pb-2 fw-bold" href="#">Accessibility</a></li>
+                                <li><a class="action text-decoration-none link-dark ps-3 fw-bold" href="#">Privacy and Data</a></li>
+                                <hr>
+                                <li><a class="action text-decoration-none link-dark ps-3 fw-bold" href="#">Log Out</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="display-container d-flex justify-content-center mt-3">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button id="pills-card-tab" data-bs-toggle="pill" data-bs-target="#pills-card" type="button" role="tab" aria-controls="pills-card"><i id="buttonone" class="fa-solid fa-list bg-white text-black fs-2"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid"><i id="buttontwo" class="fa-solid fa-border-all bg-white text-black fs-2"></i></button>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-card" role="tabpanel" aria-labelledby="pills-card-tab" tabindex="0">
+                <div id="allTheCards" class="justify-content-center">
+                    <div class="card">
+                        <img src="pic1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Me with sunglasses</h5>
+                            <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
+                            <a class="btn btn-primary" id="likeButton">like</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="pic2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">My home</h5>
+                            <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
+                            <a class="btn btn-primary" id="likeButton">like</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="pic3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Stanserhorn</h5>
+                            <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
+                            <a class="btn btn-primary" id="likeButton">like</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="pic4.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Stanserhorn top</h5>
+                            <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
+                            <a class="btn btn-primary" id="likeButton">like</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="pic5.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Hiking path</h5>
+                            <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
+                            <a class="btn btn-primary" id="likeButton">like</a>
+                        </div>
+                    </div>                          
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab" tabindex="0">
+                <div>
+                    <div class="container text-center d-flex justify-content-center">
+                        <div class="row row-cols-3">
+                            <div class="col">
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic1.jpg"></img></div></div>
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic4.jpg"></div></div>
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic7.jpg"></div></div>
+                            </div>
+                            <div class="col">
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic2.jpg"></div></div>
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic5.jpg"></div></div>
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic8.jpg"></div></div>
+                            </div>
+                            <div class="col">
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic3.jpg"></div></div>
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic6.jpg"></div></div>
+                                <div class="row"><div class="myGrid"><img class="gridImage" src="pic9.jpg"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <!--
+        <div class="display-container d-flex justify-content-center">
+
+            <div>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active btn btn-primary bg-white text-black fs-2 border-0" id="myButton1" data-bs-toggle="tab" data-bs-target="#BAR" role="tab" aria-controls="BAR" aria-selected="true"><i id="buttonone" class="fa-solid fa-list"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active btn btn-primary bg-white text-black fs-2 border-0" id="myButton2" data-bs-toggle="tab" data-bs-target="#HEY" role="tab" aria-controls="HEY" aria-selected="false"><i id="buttontwo" class="fa-solid fa-border-all"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="BAR" class="tab-pane fade show active" role="tabpanel" aria-labelledby="myButton1">
+                <div>This is the content of BAR.</div>
+            </div>
+            
+            <div id="HEY" class="tab-pane fade" role="tabpanel" aria-labelledby="myButton2">
+                <div>This is the content of HEY.</div>
+            </div>
+        </div>
+    -->
+
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <p>Add image...</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+            <button type="button" class="btn btn-primary">publish</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
