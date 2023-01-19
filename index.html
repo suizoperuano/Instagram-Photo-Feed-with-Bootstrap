@@ -24,7 +24,7 @@
                     <div class="nav-bar-right d-flex">
                         <div class="p-2">
                             <button type="button" class="btn btn-primary bg-success border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Create new post
+                                Create a new post
                               </button>
                         </div>
                         <div class="p-2">                        <div class="dropdown">
@@ -36,7 +36,7 @@
                                 <li><a class="action text-decoration-none link-dark ps-3 pb-2 fw-bold" href="#">Accessibility</a></li>
                                 <li><a class="action text-decoration-none link-dark ps-3 fw-bold" href="#">Privacy and Data</a></li>
                                 <hr>
-                                <li><a class="action text-decoration-none link-dark ps-3 fw-bold" href="#">Log Out</a></li>
+                                <li><a class="action text-decoration-none link-dark ps-3 fw-bold text-danger" href="#">Log Out</a></li>
                             </ul>
                           </div>
                         </div>
@@ -58,41 +58,61 @@
             <div class="tab-pane fade show active" id="pills-card" role="tabpanel" aria-labelledby="pills-card-tab" tabindex="0">
                 <div id="allTheCards" class="justify-content-center">
                     <div class="card">
+                        <div class="card-header d-flex bg-white">
+                            <h3>Me with sunglasses</h3>
+                            <p class="date">07/30</p>
+                        </div>
                         <img src="pic1.jpg" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Me with sunglasses</h5>
+                            <p class="likes fw-bold">1365 likes</p>
                             <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
                             <a class="btn btn-primary" id="likeButton">like</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
+                        <div class="card-header d-flex bg-white">
+                            <h3>My home</h3>
+                            <p class="date">01/29</p>
+                        </div>
                         <img src="pic2.jpg" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">My home</h5>
+                            <p class="likes fw-bold">2369 likes</p>
                             <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
                             <a class="btn btn-primary" id="likeButton">like</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
+                        <div class="card-header d-flex bg-white">
+                            <h3>Stanserhorn</h3>
+                            <p class="date">12/28</p>
+                        </div>
                         <img src="pic3.jpg" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Stanserhorn</h5>
+                            <p class="likes fw-bold">2365 likes</p>
                             <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
                             <a class="btn btn-primary" id="likeButton">like</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
+                        <div class="card-header d-flex bg-white">
+                            <h3>Stanserhorn top</h3>
+                            <p class="date">08/27</p>
+                        </div>
                         <img src="pic4.jpg" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Stanserhorn top</h5>
+                            <p class="likes fw-bold">2154 likes</p>
                             <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
                             <a class="btn btn-primary" id="likeButton">like</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
+                        <div class="card-header d-flex bg-white">
+                            <h3>Hiking path</h3>
+                            <p class="date">09/26</p>
+                        </div>
                         <img src="pic5.jpg" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Hiking path</h5>
+                            <p class="likes fw-bold">1968 likes</p>
                             <p class="card-text">This is the caption of this specific picture. I can write on and on what this picture is really about but in the end nobody really cares! It's just a nice picture</p>
                             <a class="btn btn-primary" id="likeButton">like</a>
                         </div>
@@ -157,14 +177,17 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New Post</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-             <p>Add image...</p>
+                <label for="caption" class="fw-bold">Caption:</label><br>
+                <textarea id="caption" type="text" placeholder="add a caption for your post here..."></textarea>
+                <button type="button" class="btn btn-secondary bg-white ps-3 pe-3" data-bs-dismiss="modal"><i class="fa-solid fa-camera text-black bg-white"></i></button>
+                <button type="button" class="btn btn-secondary bg-white ps-3 pe-3"><i class="fa-solid fa-location-dot text-black bh-white"></i></button>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
             <button type="button" class="btn btn-primary">publish</button>
             </div>
         </div>

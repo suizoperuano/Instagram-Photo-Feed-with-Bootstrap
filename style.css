@@ -6,7 +6,7 @@ body {
   min-height: 800px;
 }
 .justify-content-between {
-  background-color: blueviolet;
+  background-color: lightgrey;
 }
 .myGrid {
   border-style: none;
@@ -37,4 +37,17 @@ body {
 }
 #myNavbar {
   background-color: white;
+}
+#caption {
+  width: 100%;
+  min-height: 60px;
+
+}
+.card-img-top {
+  border-radius: 0;
+}
+.date {
+  text-align: right;
+  position: absolute;
+  right: 10px;
 }
